@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="Joseph Uzuegbu">
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Template dashboard</title>
+</head>
+
+<body>
+  <section class='container'>
+    <aside>
+      <p>Codal Management</p>
+      <p>Dashboard</p>
+      <details>
+        <summary>Analytics</summary>
+        <p>Finance</p>
+        <p>Vehicle</p>
+        <p>Trips</p>
+      </details>
+
+      <details>
+        <summary>Vehicle</summary>
+        <p>Finance</p>
+        <p>Vehicle</p>
+        <p>Trips</p>
+      </details>
+
+      <details>
+        <summary>Trips</summary>
+        <p>Finance</p>
+        <p>Vehicle</p>
+        <p>Trips</p>
+      </details>
+
+      <details>
+        <summary>Maintainance</summary>
+        <p>Finance</p>
+        <p>Vehicle</p>
+        <p>Trips</p>
+      </details>
+
+      <details>
+        <summary>Setting</summary>
+        <p>Finance</p>
+        <p>Vehicle</p>
+        <p>Trips</p>
+      </details>
+
+    </aside>
+    <section class='parent-main'>
+      <header>
+        <div class='hamburger'><i class="fa-solid fa-bars" style='cursor:pointer;'></i></div>
+        <ul class='menu-icon'>
+          <li><i class="fa-solid fa-address-card"></i></li>
+          <li><i class="fa-solid fa-bell"></i></li>
+          <li class='user'>User</li>
+          <li><i class="fa-solid fa-user-astronaut"></i></li>
+        </ul>
+      </header>
+
+      <section class='sub_heading'>
+        <div class='finance_keyword'>
+          <span>Finance</span>
+          <select>
+            <option>Today</option>
+            <option>Today</option>
+            <option>Today</option>
+            <option>Today</option>
+          </select>
+
+          <input type='date'>
+        </div>
+
+        <span style='padding:0.3rem'><i class="fa-brands fa-square-facebook"></i>Widget</span>
+
+      </section>
+
+<!--       budget start -->
+      <section class='budget_digits'>
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+      </section>
+      
+       <section class='budget_digits'>
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+        <div class='budget_digit'>
+          <div class='budget_digit_content'>
+            <h5>$124k</h5>
+            <p>Total Expenses</p>
+          </div>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+      </section>
+<!--       budget end -->
+
+
+      
+      <!--      graph start  -->
+      <section class='graph_wrapper'>
+        <div class='graph'>
+          <h4 class='revenue-heading'>Revenue</h4>
+          <canvas id="mylineChart"></canvas>
+        </div>
+        <div class='picChart'>
+          <h4 class='expense-heading'>Expenses</h4>
+          <canvas id="myPicChart"></canvas>
+        </div>
+      </section>
+      <!--       end  -->
+
+
+      
+         <!--      bars chart start  -->
+      <section class='graph_wrapper' style="margin-top:1rem">
+        <div class='graph'>
+          <h4 class='revenue-heading'>Revenue</h4>
+          <canvas id="mybarChart"></canvas>
+        </div>
+        <div class='picChart'>
+          <h4 class='expense-heading'>Expenses</h4>
+          <canvas id="myaMixChart"></canvas>
+        </div>
+      </section>
+      <!--     bars chart end  -->
+
+      
+
+
+      <footer>
+        <div class='social'>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+         </div>
+        <div class='terms'>
+          <p>term of use. Privacy policy</p>
+         </div>
+        <div class='webManager'>
+          <p>&copy <span id='date'> </span> Joseph company institute</p>
+         </div>
+      </footer>
+
+    </section>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

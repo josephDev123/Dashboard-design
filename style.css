@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+/*   outline: 1px solid red; */
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  background: #ffffff;
+  flex-grow: 1;
+  /*   position:relative; */
+  margin: 0 calc(100% - 98%) 0 calc(100% - 98%);
+}
+
+aside > p {
+  margin-top: 1rem;
+}
+
+aside > p:nth-child(2) {
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+aside > p:nth-child(2):hover {
+  background: #edf6f5;
+}
+
+aside > details {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+aside > details > p {
+  margin-top: 1.5rem;
+}
+
+aside > details > summary {
+  padding: 0.6rem;
+}
+
+aside > details > summary:hover {
+  background: #edf6f5;
+}
+
+.parent-main {
+  max-height: 100%;
+  background: #eff1f3;
+  flex-grow: 4;
+}
+
+header {
+  height: 2rem;
+  background: #0d8a72;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cdb4db;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+header > .menu-icon {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header > .menu-icon > li:not(.user) {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.sub_heading {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.finance_keyword > span,
+.finance_keyword > select,
+.finance_keyword > input {
+  border: 1px solid #eff1f3;
+  padding: 0.5rem 2rem 0.5rem 0rem;
+}
+
+.budget_digits {
+  display: flex;
+  margin: 1rem 0rem 1rem 0.1rem;
+  flex-wrap: wrap;
+  /*   justify-content:space-between; */
+}
+
+.budget_digit {
+  display: flex;
+  /*   gap:4rem; */
+  background: #fefefe;
+  padding: 1rem;
+  margin: 0rem 0.5rem 0.5rem;
+  flex: 1;
+  justify-content: space-between;
+  /*   flex-basic: 10rem; */
+  /*   flex-shrink:1 */
+}
+
+.budget_digit_content > h5 {
+  margin-bottom: 0.5rem;
+}
+
+/* start */
+.graph_wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  margin: 0 0.5rem 0 0.5rem;
+  flex-wrap: wrap;
+}
+
+.picChart > .expense-heading,
+.graph > .revenue-heading {
+  margin: 0.5rem;
+}
+
+.graph {
+  flex: 2 1;
+  background: #ffffff;
+   margin-bottom:0.5rem; 
+}
+
+.picChart {
+  flex: 1 1;
+  background: #ffffff;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+/* footer start */
+footer {
+  color: #bbb2c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+  background: #0d8a72;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* end footer */
+
+/* media query */
+@media only screen and (max-width: 425px) {
+  aside {
+    position: absolute;
+    left: -100%;
+  }
+  .hamburger {
+    display: inline-block;
+    margin-right: 0.3rem; 
+  }
+  .menu-icon > li  {
+    margin-right: 0.3rem; 
+  }
+  
+  
+  .graph_wrapper{
+     display:flex;
+    flex-direction:column;
+    gap:1rem; 
+  }
+  
+  
+  
+  
+}
